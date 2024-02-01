@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use GuzzleHttp\Client;
 
@@ -13,6 +13,8 @@ $client = new Client([
 
 $response = $client->request('GET', '/posts/1');
 
+echo '<pre>';
 echo $response->getBody();
+echo '</pre>';
 
 echo "Finished!";
