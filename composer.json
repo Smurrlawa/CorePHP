@@ -1,0 +1,17 @@
+{
+    "name": "andreglaser/core-php",
+    "autoload": {
+        "psr-4": {
+            "Andreglaser\\CorePhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "André Glaser",
+            "email": "smurrlawa@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
