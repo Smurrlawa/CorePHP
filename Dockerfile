@@ -1,7 +1,6 @@
 FROM php:8.2-fpm
 
-RUN apt-get update && apt-get install -y nginx
-RUN apt-get install -y git
+RUN apt-get update && apt-get install -y nginx && apt-get install -y git
 
 COPY config/default.conf /etc/nginx/sites-available/default
 
